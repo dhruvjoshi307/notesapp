@@ -1,0 +1,19 @@
+.card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #666;
+}
