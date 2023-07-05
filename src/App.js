@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import { Container, makeStyles } from '@material-ui/core';
 import NotesList from './NotesList';
+import Navbar from './Navbar';
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -14,10 +16,13 @@ const App = () => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg" className={classes.container}>
+    <>
+    <Navbar/>
+    <Container maxWidth="lg" className={classes.container} style={{marginTop:"2%"}}>
       <h1>Notes List</h1>
       <NotesList />
     </Container>
+    </>
   );
 };
 
