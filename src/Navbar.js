@@ -4,6 +4,8 @@ import { AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
   },
   toolbar: {
     display: 'flex',
@@ -12,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     marginRight: theme.spacing(2),
   },
+  '&:hover': {
+    transform: 'scale(1.05)',
+  }
  
 }));    
 

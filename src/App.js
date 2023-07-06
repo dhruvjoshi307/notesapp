@@ -19,7 +19,7 @@ const App = () => {
     <>
     <Navbar/>
     <Container maxWidth="lg" className={classes.container} style={{marginTop:"2%"}}>
-      <h1>Notes List</h1>
+      <h1 style={{color:"white"}}>Notes List</h1>
       <NotesList />
     </Container>
     </>
